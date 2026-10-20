@@ -10,8 +10,8 @@
 int main()
 {
     int num;
-    printf("enter a number");
-    scanf("%d", num);
+    printf("enter a number: ");
+    scanf("%d", &num);
 
     if (num >= 0 && num < 10)
     {
@@ -31,7 +31,7 @@ int main()
     }
     else
     {
-        print("the inputed number has error. ");
+        printf("the inputed number has error. ");
     }
     return 0;
 }
