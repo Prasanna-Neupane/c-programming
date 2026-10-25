@@ -14,7 +14,7 @@ int main()
     {
         printf(" \nEnter command: ");
         scanf("%d", &command);
-
+                                               
         switch (command)
         {
         case 0:
