@@ -10,5 +10,14 @@ int main() {
         printf("the value of a[%d]: %c \n", i, a[i]);
         ++c;
     }
+
+
+    array p[3] = {[1]=56};
+    int n = 0;
+    while(n<3)
+    {
+        printf("\n %d", p[n]);
+        n++;
+    }
     return 0;
 }
