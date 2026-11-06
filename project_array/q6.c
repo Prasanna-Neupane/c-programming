@@ -10,17 +10,69 @@
 // translating and printing characters one by one.
 
 #include <stdio.h>
+#include<ctype.h>
 #define space 100
-int main() {
+int main()
+{
     char box;
-    
+    char hol[space] = {0};
+    int i = 0;
     printf("\t\t WELCOME TO B1FF TYPE WRITER............... \n\n");
     printf("Enter message: ");
-    
-    while((box = getchar()) != '\n')
+
+    while ((box = getchar()) != '\n')
     {
-    
-        printf("The characters: %c \n", box);
+        hol[i] = toupper(box);
+        
+        i++;
+    }
+
+    for(int i = 0;i<space; i++)
+    {
+        if(hol[i]==0)
+        {
+            break;
+        }
+        else if (hol[i]!=0)
+        {
+            switch(hol[i])
+            {
+                case 'A': hol[i] = '@'; break;
+                case 'B': hol[i] = '8'; break;
+                case 'C': hol[i] = '('; break;
+                case 'D': hol[i] = ')'; break;
+                case 'E': hol[i] = '3'; break;
+                case 'F': hol[i] = '='; break;
+                case 'G': hol[i] = '6'; break;
+                case 'H': hol[i] = '#'; break;
+                case 'I': hol[i] = '!'; break;
+                case 'J': hol[i] = ']'; break;
+                case 'K': hol[i] = '<'; break;
+                case 'L': hol[i] = '1'; break;
+                case 'M': hol[i] = 'M'; break;
+                case 'N': hol[i] = '^'; break;
+                case 'O': hol[i] = '0'; break;
+                case 'P': hol[i] = '9'; break;
+                case 'Q': hol[i] = 'Q'; break;
+                case 'R': hol[i] = '2'; break;
+                case 'S': hol[i] = '$'; break;
+                case 'T': hol[i] = '7'; break;
+                case 'U': hol[i] = 'V'; break;
+                case 'V': hol[i] = 'V'; break;
+                case 'W': hol[i] = 'W'; break;
+                case 'X': hol[i] = 'X'; break;
+                case 'Y': hol[i] = 'Y'; break;
+                case 'Z': hol[i] = '2'; break;
+            }
+        }
+
+      
+    }
+
+    printf("In casual: ");
+    for(int i = 0;i<space;i++)
+    {
+        printf("%c", hol[i]);
     }
     return 0;
 }
