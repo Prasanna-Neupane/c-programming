@@ -12,12 +12,11 @@ int main()
         for(int j= 0; j< col; j++)
          {
             box[i][j] = num;
-
             printf("%d\t",box[i][j]);
             num++;
          }
          printf("\n");
-    }
+    }   
 
     
     return 0;
