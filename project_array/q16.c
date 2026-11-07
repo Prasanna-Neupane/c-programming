@@ -22,13 +22,13 @@ int main()
      char one[n] = {0},
           two[n] = {0};
      char alpha[space] = {0};
-     char ch = 'a';
-     for(int i = 0; i<space; i++)
+     char ch = 'A';
+     for (int i = 0; i < space; i++)
      {
           alpha[i] = ch;
           ch++;
      }
-     
+
      int count1[space] = {0},
          count2[space] = {0};
 
@@ -37,13 +37,81 @@ int main()
      while ((ch = getchar()) != '\n')
      {
           one[num] = toupper(ch);
+          num++;
      }
-
+     num = 0;
      printf("Enter second word: ");
      while ((ch = getchar()) != '\n')
      {
           two[num] = toupper(ch);
+          num++;
      }
 
+     for (int i = 0; i < n; i++)
+     {
+          if (one[i] != 0)
+          {
+               for (int j = 0; j < space; j++)
+               {
+                    if (one[i] == alpha[j])
+                    {
+                         count1[j] += 1;
+                    }
+               }
+          }
+          else if (one[i] == 0)
+          {
+               break;
+          }
+     }
 
+     for (int i = 0; i < n; i++)
+     {
+          if (two[i] != 0)
+          {
+               for (int j = 0; j < space; j++)
+               {
+                    if (two[i] == alpha[j])
+                    {
+                         count2[j] += 1;
+                    }
+               }
+          }
+          else if (two[i] == 0)
+          {
+               break;
+          }
+     }
+
+printf("\ncount1: ");
+
+     for(int i = 0; i<space; i++)
+     {
+          printf("%d ", count1[i]);
+     }
+
+printf("\ncount2: ");
+
+     for(int i = 0; i<space; i++)
+     {
+          printf("%d ", count2[i]);
+     }
+
+for(int i = 0; i<space;i++)
+{
+     if(count1[i] != count2[i])
+     {
+          printf("\nThe words are not anagrams. ");
+          break;
+     }
+     else if (count1[i] == count2[i])
+     {
+          if(i == space-1)
+          {
+               printf("\n The word i anagram. ");
+          }
+     }
+     
+} 
+     return 0;
 }
