@@ -30,8 +30,8 @@ int main()
     for(int i = 0;i<space; i++)
     {
         if(hol[i]==0)
-        {
-            break;
+        { 
+            break; 
         }
         else if (hol[i]!=0)
         {

@@ -14,8 +14,36 @@
 // the array are zero. If so, the words are anagrams. Hint: You may wish to use functions from
 // <ctype.h>, such as isalpha and tolower.
 #include <stdio.h>
+#include <ctype.h>
+#define n 100
+#define space 26
+int main()
+{
+     char one[n] = {0},
+          two[n] = {0};
+     char alpha[space] = {0};
+     char ch = 'a';
+     for(int i = 0; i<space; i++)
+     {
+          alpha[i] = ch;
+          ch++;
+     }
+     
+     int count1[space] = {0},
+         count2[space] = {0};
 
-int main() {
-   
-    return 0;
+     int num = 0;
+     printf("Enter first word: ");
+     while ((ch = getchar()) != '\n')
+     {
+          one[num] = toupper(ch);
+     }
+
+     printf("Enter second word: ");
+     while ((ch = getchar()) != '\n')
+     {
+          two[num] = toupper(ch);
+     }
+
+
 }
