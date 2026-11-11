@@ -20,3 +20,4 @@ int main() {
     printf("The GCD is %d", num);
     return 0;
 }
+
