@@ -1,6 +1,12 @@
 #include <stdio.h>
 
-int main() {
-    printf("enter a number: ");
+int main(void)
+{
+    int num, cal;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    
+
     return 0;
 }

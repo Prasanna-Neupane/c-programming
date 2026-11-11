@@ -108,10 +108,9 @@ for(int i = 0; i<space;i++)
      {
           if(i == space-1)
           {
-               printf("\n The word i anagram. ");
+               printf("\n The word is anagram. ");
           }
      }
-     
 } 
      return 0;
 }
