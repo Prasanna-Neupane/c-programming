@@ -1,5 +1,5 @@
 #include <stdio.h>
-int fact(numi);
+int fact(int numi);
 int main() {
     int num;
     printf("enter a number: ");
@@ -9,11 +9,14 @@ int main() {
     return 0;
 }
 
-int fact(numi)
+int fact(int numi)
 {
     if (numi != 0)
     {
         return numi*fact(numi-1);
     }
-    
+    else
+    {
+        return 1;
+    }
 }
