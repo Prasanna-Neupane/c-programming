@@ -111,6 +111,6 @@ for(int i = 0; i<space;i++)
                printf("\n The word is anagram. ");
           }
      }
-} 
+}
      return 0;
 }
