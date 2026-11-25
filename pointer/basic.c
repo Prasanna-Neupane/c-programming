@@ -1,11 +1,12 @@
 #include <stdio.h>
-
+int change(int *p){
+    *p = 400;
+}
 int main() {
-int i = 265;
-int *p = &i;
-char *j = (char *)p;
+// in function 
 
-printf("%d \n", *(j+3));
-printf("%d", *p);
+    int a = 10;
+    change(&a);
+    printf("%d", a);
     return 0;
 }
