@@ -83,8 +83,18 @@ void num_entry()
         }//..........................................................
     }
 }
+// All type of cobinations
+// High Card
+// One Pair
+// Two Pair
+// Three of a Kind
+// Four of a Kind
+// Full House
+// Flush
+// Straight
+// Straight Flush
+// Royal Flush
 
-bool flush = false;
 
 void flushh()
 {
@@ -99,7 +109,7 @@ void flushh()
 
 void striaghtt()
 {
-    //fuction project q1.c
+    //fuction project q1.c contains the sorting algorithm
     
 }
     
