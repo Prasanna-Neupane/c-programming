@@ -23,6 +23,7 @@ int entered_rank_store[card_in_hand];
 int sorted_rank[card_in_hand];
 bool flush = false;
 bool straight = false;
+int dummy = 0;
 
 int main() {
     num_entry();
@@ -32,7 +33,7 @@ int main() {
 
 void num_entry()
 {
-    while (card_count_in_hand<card_in_hand)
+     while (card_count_in_hand<card_in_hand)
     {
          //rank and suit assigned.....................................
         printf("Enter a card:");//
@@ -110,6 +111,7 @@ void flushh()
 void striaghtt()
 {
     //fuction project q1.c contains the sorting algorithm
+    
     
 }
     
